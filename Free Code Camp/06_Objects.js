@@ -49,7 +49,7 @@ var nestedObj = {
 
 console.log(nestedObj.nestedProperty.nest1);
 
-//mixing arrays and objs
+//array of objects
 var mixedArrarObj = [
     {
         type: "flower",
@@ -86,3 +86,12 @@ const newObj = new Object();
 //but points to the same obj, or share the same memory addres
 var oneObj = new Object();
 var otherObj = oneObj;
+
+
+//freeze the properties of an obj (make then constant)
+
+const MY_CONST_OBJ = {
+    PI : 3.14
+}
+
+Object.freeze(MY_CONST_OBJ);
